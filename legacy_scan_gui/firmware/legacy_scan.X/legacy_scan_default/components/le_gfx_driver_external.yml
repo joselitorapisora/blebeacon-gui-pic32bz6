@@ -1,0 +1,617 @@
+configVersion: 1.0.0
+componentName: le_gfx_driver_external
+coreVersion: 5.8.4
+device: PIC32WM_BZ6204
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: le_gfx_driver_external
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: gfx
+  type: package
+  version: v3.16.3
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments:
+    children:
+    - children:
+      - attributes:
+          id: Graphics Display
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: gfx_disp_generic
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: gfx_display
+            type: String
+          type: Attributes
+        type: DirectDependency
+      - attributes:
+          id: Parallel Display Interface
+        children:
+        - children:
+          - attributes:
+              id: enabled
+            children:
+            - type: Value
+              value: 'false'
+            type: Boolean
+          type: Attributes
+        type: DirectDependency
+      - attributes:
+          id: SPI Display Interface
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: le_gfx_intf_spi4
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: le_gfx_intf_spi4
+            type: String
+          - attributes:
+              id: enabled
+            children:
+            - type: Value
+              value: 'true'
+            type: Boolean
+          type: Attributes
+        type: DirectDependency
+      - attributes:
+          id: gfx_driver_external
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: gfx_legato
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: gfx_driver
+            type: String
+          type: Attributes
+        type: DirectCapability
+      type: Attachments
+    type: le_gfx_driver_external
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: le_gfx_driver_external
+          x: '575'
+          y: '374'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    BaseDriverType:
+      attributes:
+        id: BaseDriverType
+      children:
+      - children:
+        - attributes:
+            value: ILI9488
+          type: User
+        type: Values
+      type: Combo
+    Command0:
+      attributes:
+        id: Command0
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '58'
+          type: Dynamic
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: Hex
+    Command0Comment:
+      attributes:
+        id: Command0Comment
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: Pixel Format Set
+          type: Dynamic
+        - attributes:
+            value: ST7789_SWRESET
+          type: User
+        type: Values
+      type: String
+    Command0Delay:
+      attributes:
+        id: Command0Delay
+      children:
+      - children:
+        - attributes:
+            value: '150'
+          type: User
+        type: Values
+      type: Integer
+    Command0Parm0:
+      attributes:
+        id: Command0Parm0
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '5'
+          type: Dynamic
+        type: Values
+      type: Hex
+    Command0ParmsCount:
+      attributes:
+        id: Command0ParmsCount
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '1'
+          type: Dynamic
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: Integer
+    Command1:
+      attributes:
+        id: Command1
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '233'
+          type: Dynamic
+        - attributes:
+            value: '17'
+          type: User
+        type: Values
+      type: Hex
+    Command1Comment:
+      attributes:
+        id: Command1Comment
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: Set Image Function
+          type: Dynamic
+        - attributes:
+            value: ST7789_SLPOUT
+          type: User
+        type: Values
+      type: String
+    Command1Delay:
+      attributes:
+        id: Command1Delay
+      children:
+      - children:
+        - attributes:
+            value: '120'
+          type: User
+        type: Values
+      type: Integer
+    Command1Parm0:
+      attributes:
+        id: Command1Parm0
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: Hex
+    Command1ParmsCount:
+      attributes:
+        id: Command1ParmsCount
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '1'
+          type: Dynamic
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: Integer
+    Command2:
+      attributes:
+        id: Command2
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '176'
+          type: Dynamic
+        - attributes:
+            value: '58'
+          type: User
+        type: Values
+      type: Hex
+    Command2Comment:
+      attributes:
+        id: Command2Comment
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: Interface Mode Control
+          type: Dynamic
+        - attributes:
+            value: ST7789_COLMOD
+          type: User
+        type: Values
+      type: String
+    Command2Parm0:
+      attributes:
+        id: Command2Parm0
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '0'
+          type: Dynamic
+        - attributes:
+            value: '5'
+          type: User
+        type: Values
+      type: Hex
+    Command2ParmsCount:
+      attributes:
+        id: Command2ParmsCount
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: Integer
+    Command3:
+      attributes:
+        id: Command3
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '54'
+          type: Dynamic
+        type: Values
+      type: Hex
+    Command3Comment:
+      attributes:
+        id: Command3Comment
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: Memory Access Control
+          type: Dynamic
+        - attributes:
+            value: ST7789_MADCTL
+          type: User
+        type: Values
+      type: String
+    Command3Parm0:
+      attributes:
+        id: Command3Parm0
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '72'
+          type: Dynamic
+        - attributes:
+            value: '96'
+          type: User
+        type: Values
+      type: Hex
+    Command3ParmsCount:
+      attributes:
+        id: Command3ParmsCount
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: Integer
+    Command4:
+      attributes:
+        id: Command4
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '17'
+          type: Dynamic
+        - attributes:
+            value: '41'
+          type: User
+        type: Values
+      type: Hex
+    Command4Comment:
+      attributes:
+        id: Command4Comment
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: Sleep Out
+          type: Dynamic
+        - attributes:
+            value: ST7789_DISPON
+          type: User
+        type: Values
+      type: String
+    Command4Delay:
+      attributes:
+        id: Command4Delay
+      children:
+      - children:
+        - attributes:
+            value: '9'
+          type: User
+        type: Values
+      type: Integer
+    Command4ParmsCount:
+      attributes:
+        id: Command4ParmsCount
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    Command5:
+      attributes:
+        id: Command5
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '41'
+          type: Dynamic
+        type: Values
+      type: Hex
+    Command5Comment:
+      attributes:
+        id: Command5Comment
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: Display On
+          type: Dynamic
+        type: Values
+      type: String
+    Command5ParmsCount:
+      attributes:
+        id: Command5ParmsCount
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    ControllerName:
+      attributes:
+        id: ControllerName
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: ILI9488
+          type: Dynamic
+        - attributes:
+            value: ST89
+          type: User
+        type: Values
+      type: String
+    DataWriteSize:
+      attributes:
+        id: DataWriteSize
+      children:
+      - children:
+        - attributes:
+            value: '8'
+          type: User
+        type: Values
+      type: Combo
+    DisplayHeight:
+      attributes:
+        id: DisplayHeight
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '272'
+          type: Dynamic
+        - attributes:
+            value: '240'
+          type: User
+        type: Values
+      type: Integer
+    DisplayInterfaceType:
+      attributes:
+        id: DisplayInterfaceType
+      children:
+      - children:
+        - attributes:
+            value: SPI 4-line
+          type: User
+        type: Values
+      type: Combo
+    DisplayWidth:
+      attributes:
+        id: DisplayWidth
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '480'
+          type: Dynamic
+        - attributes:
+            value: '320'
+          type: User
+        type: Values
+      type: Integer
+    InitCommandsCount:
+      attributes:
+        id: InitCommandsCount
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '6'
+          type: Dynamic
+        - attributes:
+            value: '5'
+          type: User
+        type: Values
+      type: Integer
+    MemoryWriteCommand:
+      attributes:
+        id: MemoryWriteCommand
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '44'
+          type: Dynamic
+        type: Values
+      type: Hex
+    PostResetDelay:
+      attributes:
+        id: PostResetDelay
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '30'
+          type: Dynamic
+        - attributes:
+            value: '150'
+          type: User
+        type: Values
+      type: Integer
+    ResetAssertDuration:
+      attributes:
+        id: ResetAssertDuration
+      children:
+      - children:
+        - attributes:
+            value: '150'
+          type: User
+        type: Values
+      type: Integer
+    SetXAddressCommand:
+      attributes:
+        id: SetXAddressCommand
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '42'
+          type: Dynamic
+        type: Values
+      type: Hex
+    SetYAddressCommand:
+      attributes:
+        id: SetYAddressCommand
+      children:
+      - children:
+        - attributes:
+            id: le_gfx_driver_external
+            value: '43'
+          type: Dynamic
+        type: Values
+      type: Hex
+  userData: {}

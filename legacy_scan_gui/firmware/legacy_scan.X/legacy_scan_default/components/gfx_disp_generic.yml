@@ -1,0 +1,251 @@
+configVersion: 1.0.0
+componentName: gfx_disp_generic
+coreVersion: 5.8.4
+device: PIC32WM_BZ6204
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: gfx_disp_generic
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: gfx
+  type: package
+  version: v3.16.3
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments:
+    children:
+    - children:
+      - attributes:
+          id: gfx_display
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: le_gfx_driver_external
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: Graphics Display
+            type: String
+          type: Attributes
+        type: DirectCapability
+      type: Attachments
+    type: gfx_disp_generic
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: gfx_disp_generic
+          x: '403'
+          y: '416'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    BacklightDisable:
+      attributes:
+        id: BacklightDisable
+      children:
+      - children:
+        - attributes:
+            id: gfx_disp_generic
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    BacklightEnable:
+      attributes:
+        id: BacklightEnable
+      children:
+      - children:
+        - attributes:
+            id: gfx_disp_generic
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: Integer
+    ChipSelectPolarity:
+      attributes:
+        id: ChipSelectPolarity
+      children:
+      - children:
+        - attributes:
+            id: gfx_disp_generic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    DataEnable:
+      attributes:
+        id: DataEnable
+      children:
+      - children:
+        - attributes:
+            id: gfx_disp_generic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    DataEnablePolarity:
+      attributes:
+        id: DataEnablePolarity
+      children:
+      - children:
+        - attributes:
+            id: gfx_disp_generic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    DisplayHeight:
+      attributes:
+        id: DisplayHeight
+      children:
+      - children:
+        - attributes:
+            id: gfx_disp_generic
+            value: '240'
+          type: Dynamic
+        type: Values
+      type: Integer
+    DisplayWidth:
+      attributes:
+        id: DisplayWidth
+      children:
+      - children:
+        - attributes:
+            id: gfx_disp_generic
+            value: '320'
+          type: Dynamic
+        type: Values
+      type: Integer
+    HSYNCNegative:
+      attributes:
+        id: HSYNCNegative
+      children:
+      - children:
+        - attributes:
+            id: gfx_disp_generic
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    HorzBackPorch:
+      attributes:
+        id: HorzBackPorch
+      children:
+      - children:
+        - attributes:
+            id: gfx_disp_generic
+            value: '2'
+          type: Dynamic
+        type: Values
+      type: Integer
+    HorzFrontPorch:
+      attributes:
+        id: HorzFrontPorch
+      children:
+      - children:
+        - attributes:
+            id: gfx_disp_generic
+            value: '2'
+          type: Dynamic
+        type: Values
+      type: Integer
+    HorzPulseWidth:
+      attributes:
+        id: HorzPulseWidth
+      children:
+      - children:
+        - attributes:
+            id: gfx_disp_generic
+            value: '41'
+          type: Dynamic
+        type: Values
+      type: Integer
+    ResetPolarity:
+      attributes:
+        id: ResetPolarity
+      children:
+      - children:
+        - attributes:
+            id: gfx_disp_generic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    UseChipSelect:
+      attributes:
+        id: UseChipSelect
+      children:
+      - children:
+        - attributes:
+            id: gfx_disp_generic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    UseReset:
+      attributes:
+        id: UseReset
+      children:
+      - children:
+        - attributes:
+            id: gfx_disp_generic
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    VSYNCNegative:
+      attributes:
+        id: VSYNCNegative
+      children:
+      - children:
+        - attributes:
+            id: gfx_disp_generic
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    VertBackPorch:
+      attributes:
+        id: VertBackPorch
+      children:
+      - children:
+        - attributes:
+            id: gfx_disp_generic
+            value: '2'
+          type: Dynamic
+        type: Values
+      type: Integer
+    VertFrontPorch:
+      attributes:
+        id: VertFrontPorch
+      children:
+      - children:
+        - attributes:
+            id: gfx_disp_generic
+            value: '2'
+          type: Dynamic
+        type: Values
+      type: Integer
+    VertPulseWidth:
+      attributes:
+        id: VertPulseWidth
+      children:
+      - children:
+        - attributes:
+            id: gfx_disp_generic
+            value: '10'
+          type: Dynamic
+        type: Values
+      type: Integer
+  userData: {}
