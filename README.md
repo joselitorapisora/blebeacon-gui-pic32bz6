@@ -18,8 +18,8 @@
 
 #### Demo:
 
-![demo](assets\demo1.png)  
-![demo](assets\demo2.png)  
+![demo](assets/demo1.png)  
+![demo](assets/demo2.png)  
 
 
 ------
